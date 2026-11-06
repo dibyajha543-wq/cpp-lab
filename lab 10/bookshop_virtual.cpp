@@ -11,15 +11,15 @@ public:
  
     virtual void read() {
         cin.ignore(1000, '\n');
-        cout << "Enter title       : ";
+        cout << "Enter title: ";
         cin.getline(title, 64);
-        cout << "Enter publication : ";
+        cout << "Enter publication: ";
         cin.getline(publication, 64);
     }
 
     virtual void show() {
-        cout << "Title       : " << title << "\n";
-        cout << "Publication : " << publication << "\n";
+        cout << "Title: " << title << "\n";
+        cout << "Publication: " << publication << "\n";
     }
 
    
@@ -41,7 +41,7 @@ public:
     void show() {              
         cout << "\n[BOOK]\n";
         Media::show();
-        cout << "Pages       : " << pages << "\n";
+        cout << "Pages:" << pages << "\n";
     }
 };
 
@@ -59,7 +59,7 @@ public:
     void show() {                 
         cout << "\n[VIDEO TAPE]\n";
         Media::show();
-        cout << "Play time   : " << playTime << " minutes\n";
+        cout << "Play time: " << playTime << " minutes\n";
     }
 };
 
@@ -84,10 +84,10 @@ int main() {
             count++;
         }
         else if (choice == 3) {
-            cout << "\n========== BOOK SHOP STOCK ==========";
+            cout << "\n===BOOK SHOP STOCK ===";
             for (int i = 0; i < count; i++)
                 items[i]->show();          
-            cout << "\n=====================================\n";
+            cout << "\n===============\n";
         }
         else if ((choice == 1 || choice == 2) && count >= MAX) {
             cout << "Shop is full!\n";

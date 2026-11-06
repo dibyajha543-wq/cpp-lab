@@ -48,20 +48,20 @@ public:
 
     void displaySalarySlip() const {
         cout << fixed << setprecision(2);
-        cout << "\n-----------------------------";
+        cout << "\n------------------";
         cout << "\n        SALARY SLIP";
-        cout << "\n-----------------------------";
-        cout << "\nName          : " << name;
-        cout << "\nAge           : " << age;
-        cout << "\nAddress       : " << address;
-        cout << "\n-----------------------------";
-        cout << "\nBasic Salary  : " << basic;
-        cout << "\nHRA           : " << hra;
-        cout << "\nDA            : " << da;
-        cout << "\nTA            : " << ta;
-        cout << "\n-----------------------------";
+        cout << "\n--------------;
+        cout << "\nName: " << name;
+        cout << "\nAge: " << age;
+        cout << "\nAddress: " << address;
+        cout << "\n---------------";
+        cout << "\nBasic Salary: " << basic;
+        cout << "\nHRA: " << hra;
+        cout << "\nDA  : " << da;
+        cout << "\nTA: " << ta;
+        cout << "\n---------------------";
         cout << "\nTotal Salary  : " << totalSalary;
-        cout << "\n-----------------------------\n";
+        cout << "\n---------------\n";
     }
 };
 

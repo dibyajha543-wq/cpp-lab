@@ -18,7 +18,7 @@ public:
 
     void showStudent() {
         cout << "Roll No : " << rollNo << "\n";
-        cout << "Name    : " << name   << "\n";
+        cout << "Name: " << name   << "\n";
     }
 };
 
@@ -60,7 +60,7 @@ public:
     void display() {
         showStudent();        
         cout << "Theory Marks : " << theory[0] << ", "
-             << theory[1] << ", " << theory[2] << "\n";
+        cout<< theory[1] << ", " << theory[2] << "\n";
         cout << "Sports Marks : " << sportsMarks << "\n";
         cout << "TOTAL MARKS  : " << total << " / 400\n";
     }
@@ -74,9 +74,9 @@ int main() {
     r.getSportsMarks();   
     r.calculate();
 
-    cout << "\n=========== RESULT ===========\n";
-    r.display();
-    cout << "==============================\n";
+    cout << "\n====== RESULT ======\n";
+    r.display();=
+    cout << "===================\n";
 
     return 0;
 }
